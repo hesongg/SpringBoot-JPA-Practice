@@ -38,7 +38,7 @@ class MemberServiceTest {
         em.flush();
 
         //then
-        assertEquals(member, memberRepository.findOne(savedId));
+        assertEquals(member, memberRepository.findById(savedId));
     }
 
     @Test
